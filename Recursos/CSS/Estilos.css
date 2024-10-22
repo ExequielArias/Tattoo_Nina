@@ -380,6 +380,7 @@ html{
     .Boton{
         display: flex;
         align-items: center;
+        text-align: center;
         justify-content: center;
         border-radius: 30px;
         border-style: none;
@@ -419,47 +420,32 @@ html{
         color: black;
         font-family: Dancing Script;
     }
-    
+
     .Botones_Noticias{
         display: block;
+        gap: 10px;
         padding-left: 10px;
         padding-right: 10px;
     }
     
-    .Noticia1{
+    .Boton_Noticia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 30px;
+        border-style: none;
         width: 100%;
-        height: 200px;
+        height: 400px;
+        background-size: cover;
+        text-decoration: none;
+        color: white;
     }
     
-    .Noticia1 img{
-        border-radius: 30px;
-        width: 100%;
-        height: 200px;
-    }
-    
-    .Noticia2{
-        border-radius: 30px;
-        width: 100%;
-        height: 200px;
-    }
-
-    .Noticia2 img{
-        border-radius: 30px;
-        width: 100%;
-        height: 200px;
-    }
-    
-    .Noticia3{
-        border-radius: 30px;
-        width: 100%;
-        height: 200px;
-    }
-
-    .Noticia3 img{
-        border-radius: 30px;
-        width: 100%;
-        height: 200px;
+    .Text_Noticia{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 20px;
+        font-size: 50px;
     }
 
     .pie{
@@ -473,24 +459,6 @@ html{
     .pie ul {
         list-style: none;
         justify-content: center;
-    }
-    
-    .Contacto{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #8f8d8d;
-        border-radius: 50%;
-        width:40px;
-        height:40px;
-        position: fixed;
-        right: 20px;
-        bottom: 20px;
-    }
-    
-    .Contacto svg{
-        width:40px;
-        height:40px;
     }
 
     .Cuerpo-Bocetos{
