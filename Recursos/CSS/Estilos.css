@@ -336,7 +336,7 @@ html{
     font-size: 20px;
 }
 
-@media(width < 768px){
+@media(width < 780px){
     .encabezado{
         display: flex;
         justify-content: space-between;
@@ -389,6 +389,7 @@ html{
         background-size: cover;
         text-decoration: none;
         color: white;
+        margin-bottom: 10px;
     }
 
     .Descripcion{
