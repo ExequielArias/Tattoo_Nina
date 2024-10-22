@@ -426,6 +426,7 @@ html{
         gap: 10px;
         padding-left: 10px;
         padding-right: 10px;
+        
     }
     
     .Boton_Noticia{
@@ -439,6 +440,7 @@ html{
         background-size: cover;
         text-decoration: none;
         color: white;
+        margin-bottom: 10px;
     }
     
     .Text_Noticia{
