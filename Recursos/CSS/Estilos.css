@@ -112,10 +112,11 @@ html{
 }
 
 .Descripcion p{
+    display: block;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    width: 40%;
+    width: 50%;
     font-size: 40px;
     padding-left: 10px;
 }
