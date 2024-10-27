@@ -12,7 +12,9 @@ function validarTelefono(input) {
     }
 }
 
-document.getElementById("idTel").addEventListener("keydown", function (event) {
+const telef=document.getElementById("idTel");
+
+telef.addEventListener("change", function (event) {
         
     if (!/^[0-9]$/.test(event.key)) {
         event.preventDefault();
