@@ -12,6 +12,13 @@ function validarTelefono(input) {
     }
 }
 
+document.getElementById("idTel").addEventListener("keydown", function (event) {
+        
+    if (!/^[0-9]$/.test(event.key)) {
+        event.preventDefault();
+    }
+});
+
 function validarDni(input) {
     const errorMessage = document.getElementById('error-dni');
     const valor = input.value;
