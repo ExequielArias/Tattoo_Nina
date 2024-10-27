@@ -12,27 +12,60 @@ function validarTelefono(input) {
     }
 }
 
-const telef=document.getElementById("idTel");
+const inputTel = document.getElementById("IdTel");
 
-telef.addEventListener("change", function (event) {
-        
-    if (!/^[0-9]$/.test(event.key)) {
-        event.preventDefault();
+    inputTel.addEventListener("keydown", function (event) {
+        // Permitir teclas especiales (retroceso, tab, flechas, etc.)
+        if (
+            event.key === "Backspace" ||
+            event.key === "Tab" ||
+            event.key === "ArrowLeft" ||
+            event.key === "ArrowRight"
+        ) {
+            return;
+        }
+
+        // Prevenir cualquier cosa que no sea un número
+        if (!/^\d$/.test(event.key)) {
+            event.preventDefault();
+        }
+
+        if (this.value.length > 10) {
+            this.value = this.value.slice(0, 10); // Cortar a 10 dígitos si el valor es mayor
+        }
+    });
+
+const inputDni = document.getElementById("IdDni");
+
+inputDni.addEventListener("input", function (event) {
+    // Eliminar cualquier carácter que no sea numérico
+    this.value = this.value.replace(/[^0-9]/g, '');
+
+    // Limitar la cantidad máxima de caracteres a 8
+    if (this.value.length > 8) {
+        this.value = this.value.slice(0, 8);
     }
 });
 
-function validarDni(input) {
-    const errorMessage = document.getElementById('error-dni');
-    const valor = input.value;
-    if (valor.length > 8) {
-        input.value = valor.slice(0, 8);
-    }
-    if (valor.length < 8) {
-        errorMessage.style.display = 'block';
-    } else {
-        errorMessage.style.display = 'none';
-    }
+// Prevenir la entrada de más de 8 dígitos en 'keydown'
+inputDni.addEventListener("keydown", function(event) {
+    // Permitir teclas especiales como Backspace, Tab, flechas, etc.
+if (
+    event.key === "Backspace" || 
+    event.key === "Tab" || 
+    event.key === "ArrowLeft" || 
+    event.key === "ArrowRight"
+) {
+     return;
 }
+
+// Prevenir la entrada de más de 8 dígitos
+if (input.value.length >= 8 && !isNaN(event.key)) {
+    event.preventDefault();
+}
+});
+
+
 
 const fechaInput = document.getElementById('IdFecha');
 const errorMessage = document.getElementById('error-fecha');
