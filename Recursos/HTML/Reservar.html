@@ -22,10 +22,11 @@
             <img src="../Imagenes/IMG portada cuerpo.jpg" alt="Portada">
             <section class="seccion-contacto">
                 <h1>Reserva un turno para tu porximo tatuaje!</h1>
-                <form class="formulario-contacto" action="https://formsubmit.co/tattoonina7@gmail.com" method="POST">
-                    
+                <form class="formulario-contacto" action="https://formsubmit.co/exequielarias932@gmail.com" method="POST">
+
+
                     <label for="IdNombreApellido">Nombre y Apellido:</label>
-                    <input type="text" name="Nombre y Apellido:" id="IdNombreApellido" placeholder="Complete el campo" required>
+                    <input type="text" name="Nombre y Apellido" id="IdNombreApellido" placeholder="Complete el campo" required>
                     <span id="error-nombre" style="color: red; display: none;">Solo se permiten letras.</span>
                     
                     <label for="IdTel">Telefono:</label>
@@ -33,19 +34,23 @@
                     <span id="error-telefono" style="color: red; display: none;">Debe contener exactamente 10 dígitos.</span>
                     
                     <label for="IdDni">DNI:</label>
-                    <input type="number" name="DNI:" id="IdDni" placeholder="Complete el campo" oninput="validarDni(this)" required>
+                    <input type="number" name="DNI" id="IdDni" placeholder="Complete el campo" oninput="validarDni(this)" required>
                     <span id="error-dni" style="color: red; display: none;">Debe contener exactamente 8 dígitos.</span>
                     
                     <label for="IdFecha">Seleccione una fecha:</label>
-                    <input type="date" name="Fecha:" id="IdFecha" placeholder="Complete el campo" required>
+                    <input type="date" name="Fecha" id="IdFecha" placeholder="Complete el campo" required>
                     <span id="error-fecha" style="color: red; display: none;">No puedes seleccionar una fecha pasada.</span>
                     
                     <label for="IdEmail"> Email </label>
-                    <input type="email" name="Email:" id="IdEmail" placeholder="Complete el campo" required>
+                    <input type="email" name="Email" id="IdEmail" placeholder="Complete el campo" required>
                     
                     <label for="IdMensaje"> Comentarios </label>
-                    <textarea name="Mensaje:" id="IdMensaje" placeholder="Aclarar si posee algun tipo de enfermedad en sangre, reaccion alergica o sufre de desmayos:"></textarea>
+                    <textarea name="Mensaje" id="IdMensaje" placeholder="Aclarar si posee algun tipo de enfermedad en sangre, reaccion alergica o sufre de desmayos:"></textarea>
+                    
                     <button type="submit">Enviar</button>
+
+                    <input type="hidden" name="_next" value="https://exequielarias.github.io/Tattoo_Nina/Recursos/HTML/Reservar.html">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
                 <script src="../JavaScript/script.js"></script>
             </section>
