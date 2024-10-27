@@ -33,47 +33,50 @@ function validarDni(input) {
 }
 
 const fechaInput = document.getElementById('IdFecha');
-        const errorMessage = document.getElementById('error-fecha');
-        const hoy = new Date();
-        const yyyy = hoy.getFullYear();
-        const mm = String(hoy.getMonth() + 1).padStart(2, '0');
-        const dd = String(hoy.getDate()).padStart(2, '0');
-        const fechaActual = `${yyyy}-${mm}-${dd}`;
+const errorMessage = document.getElementById('error-fecha');
+const hoy = new Date();
+const yyyy = hoy.getFullYear();
+const mm = String(hoy.getMonth() + 1).padStart(2, '0');
+const dd = String(hoy.getDate()).padStart(2, '0');
+const fechaActual = `${yyyy}-${mm}-${dd}`;
 
-        fechaInput.min = fechaActual;
+fechaInput.min = fechaActual;
 
-        const tresMeses = new Date(hoy.setMonth(hoy.getMonth() + 3));
-        const yyyyMax = tresMeses.getFullYear();
-        const mmMax = String(tresMeses.getMonth() + 1).padStart(2, '0');
-        const ddMax = String(tresMeses.getDate()).padStart(2, '0');
-        const fechaMaxima = `${yyyyMax}-${mmMax}-${ddMax}`;
-        fechaInput.max = fechaMaxima;
+const tresMeses = new Date(hoy.setMonth(hoy.getMonth() + 3));
+const yyyyMax = tresMeses.getFullYear();
+const mmMax = String(tresMeses.getMonth() + 1).padStart(2, '0');
+const ddMax = String(tresMeses.getDate()).padStart(2, '0');
+const fechaMaxima = `${yyyyMax}-${mmMax}-${ddMax}`;
+fechaInput.max = fechaMaxima;
 
-        fechaInput.addEventListener('change', function() {
-            const fechaSeleccionada = fechaInput.value;
+fechaInput.addEventListener('change', function() {
+    const fechaSeleccionada = fechaInput.value;
 
-            if (fechaSeleccionada < fechaActual) {
-                errorMessage.style.display = 'block';
-                fechaInput.value = ''; 
-            } else {
-                errorMessage.style.display = 'none'; 
-            }
-        });
+    if (fechaSeleccionada < fechaActual) {
+        errorMessage.style.display = 'block';
+        fechaInput.value = ''; 
+    } else {
+        errorMessage.style.display = 'none'; 
+    }
+});
 
 
-        const nombreInput = document.getElementById('IdNombreApellido');
-        const error = document.getElementById('error-nombre');
+const nombreInput = document.getElementById('IdNombreApellido');
+const error = document.getElementById('error-nombre');
 
-        //Validar la entrada del usuario
-        nombreInput.addEventListener('input', function() {
-            //Permitir solo letras (mayúsculas y minúsculas) y espacios
-            const reglas = /^[a-zA-Z\s]*$/;
+//Validar la entrada del usuario
+nombreInput.addEventListener('input', function() {
+    //Permitir solo letras (mayúsculas y minúsculas) y espacios
+    const reglas = /^[a-zA-Z\s]*$/;
 
-            // Si el valor no coincide con la expresión regular, mostrar error
-            if (!reglas.test(nombreInput.value)) {
-                error.style.display = 'block'; // Mostrar mensaje de error
-                nombreInput.value = nombreInput.value.replace(/[^a-zA-Z\s]/g, ''); // Eliminar caracteres no permitidos
-            } else {
-                error.style.display = 'none'; // Ocultar el mensaje si la entrada es válida
-            }
-        });
+    // Si el valor no coincide con la expresión regular, mostrar error
+    if (!reglas.test(nombreInput.value)) {
+        error.style.display = 'block'; // Mostrar mensaje de error
+        nombreInput.value = nombreInput.value.replace(/[^a-zA-Z\s]/g, ''); // Eliminar caracteres no permitidos
+    } else {
+        error.style.display = 'none'; // Ocultar el mensaje si la entrada es válida
+    }
+});
+
+
+    
