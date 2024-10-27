@@ -70,6 +70,3 @@ const fechaInput = document.getElementById('IdFecha');
                 error.style.display = 'none'; // Ocultar el mensaje si la entrada es válida
             }
         });
-
-
-        //tattoonina7@gmail.com
