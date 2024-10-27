@@ -337,7 +337,7 @@ html{
     font-size: 20px;
 }
 
-@media(width < 850px){
+@media(device-width < 850px){
     .encabezado{
         display: flex;
         justify-content: space-between;
