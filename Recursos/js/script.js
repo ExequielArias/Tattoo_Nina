@@ -117,4 +117,17 @@ nombreInput.addEventListener('input', function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     
