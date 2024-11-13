@@ -224,6 +224,37 @@ html {
 }
 
 /*----------------------------------------------------------------------------Pag de bocetos-------------------------------------------------------------------------------------------------*/
+.Cuerpo-Bocetos{
+    flex-grow: 1;
+    padding-block: 40px;
+    background-color: #fff;
+}
+
+.contenedor-Bocetos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.Bocetos{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0px 10px 10px 10px;
+    width: 30%;
+}
+
+.Bocetos_fig {
+    width: 100%;
+}
+.Bocetos_fig > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
 .Siguiente-pag {
     display: flex;
     text-align: center;
@@ -244,7 +275,7 @@ html {
     border-radius: 30px;
 }
 
-.Primera-Linea {
+/* .Primera-Linea {
     display: flex;
     gap: 10px;
     padding-left: 10px;
@@ -299,7 +330,7 @@ html {
     height: 50px;
     background-color: #E5E5E5;
     text-decoration: none;
-}
+} */
 
 /*------------------------------------------------------------------------------Pie de pag--------------------------------------------------------------------------------------*/
 .pie {
@@ -535,21 +566,18 @@ dialog section ul button{
 .cuerpo-piercing{
     flex-grow: 1;
     padding-block: 40px;
-    padding-inline: 10%;
     background-color: #fff;
 }
 
 .contenedor-piercing{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .piercing{
-    display: flex;
-    width: 100%;
-    gap: 10px;
-    /* padding: 10px; */
-    /* margin-block-end: 25px; */
+    padding: 10px 10px 10px 10px;
+    width: 25%;
 }
 
 .piercing__fig {
@@ -557,9 +585,8 @@ dialog section ul button{
 }
 .piercing__fig > img {
     width: 100%;
-    /* height: 500px; */
-    /* object-fit: cover; */
-    /* object-position: center; */
+    height: 250px;
+    object-fit: cover;
 }
 
 
@@ -987,4 +1014,31 @@ dialog section ul button{
         border: none;
         background: transparent;
     }
+
+/*------------------------------------------------------------------------Pag de piercing----------------------------------------------------------------------------------*/
+.cuerpo-piercing{
+    flex-grow: 1;
+    padding-block: 40px;
+    background-color: #fff;
+}
+
+.contenedor-piercing{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.piercing{
+    padding: 10px 10px 10px 10px;
+    width: 50%;
+}
+
+.piercing__fig {
+    width: 100%;
+}
+.piercing__fig > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
 }

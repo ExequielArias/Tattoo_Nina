@@ -64,9 +64,24 @@ export function renderizarPiercing(arregloPiercing, contenedorPiercing) {
         contenidoHTML += ` 
     <article class="piercing">
         <figure class="piercing__fig">
-            <img src="${piercing.imagen}" alt="Nombre" />
+            <img src="${piercing.imagen}" alt="Piercings"/>
         </figure>
+    </article>
     `
     })
     contenedorPiercing.innerHTML = contenidoHTML;
+}
+
+export function RenderizadoBocetos(arregloBocetos, contenedorBocetos) {
+    let contenidoHTML = '';
+    arregloBocetos.forEach((Boceto) => {
+        contenidoHTML += `
+    <article class="Bocetos">
+        <figure class="Bocetos_fig">
+            <img src="${Boceto.imagen}" alt="Bocetos"/>
+        </figure>
+    </article>
+    `
+    })
+    contenedorBocetos.innerHTML = contenidoHTML;
 }
