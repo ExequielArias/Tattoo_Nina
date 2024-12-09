@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "imagen" : "../recursos/piercings/Piercing-Nariz.jpg" 
+    },
+    {
+        "id": 2,
+        "imagen" : "../recursos/piercings/Piercing-Oreja.jpg" 
+    },
+    {
+        "id": 3,
+        "imagen" : "../recursos/piercings/Piercing-Oreja2.jpg"
+    },
+    {
+        "id": 4,
+        "imagen" : "../recursos/piercings/Piercing-Pupo.jpg"
+    },
+    {
+        "id": 5,
+        "imagen" : "../recursos/piercings/Piercing-Ceja.jpg"
+    },
+    {
+        "id": 6,
+        "imagen" : "../recursos/piercings/Piercing-Dedo.jpg"
+    },
+    {
+        "id": 7,
+        "imagen" : "../recursos/piercings/Piercing-Oreja3.jpg"
+    },
+    {
+        "id": 6,
+        "imagen" : "../recursos/piercings/Piercing-Oreja4.jpg"
+    }
+]

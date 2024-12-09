@@ -1,0 +1,729 @@
+@font-face {
+    font-family: "Gowun batang";
+    src: url(../fuentes/GowunBatang-Regular.ttf);
+    font-family: "Dancing Script";
+    src: url(../fuentes/DancingScript-VariableFont_wght.ttf);
+    font-family: "Arima";
+    src: url(../fuentes/Arima-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Gowun batang";
+    src: url(../fuentes/GowunBatang-Regular.ttf);
+    color: #222;
+    font-size: 18px;
+}
+
+html {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*-------------------------------------------------------------------------Encabezado de pag------------------------------------------------------------------------------------------------------------------------------------*/
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    top: 0;
+}
+
+.encabezado a img {
+    height: 50px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.imagen-Logo {
+    width: 30%;
+    height: 50px;
+    padding-left: 70px;
+}
+
+.encabezado nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 25px;
+    /*Para quitar el subrayado*/
+    width: 30px;
+    padding: 5px;
+}
+
+/*----------------------------------------------------------------------------Cuerpo de pag--------------------------------------------------------------------------------------------------------*/
+.cuerpo {
+    padding-bottom: 50px;
+}
+
+/*---------------------------------------------------------------------------Mapa de Ubicacion------------------------------------------------------------------------------------------------*/
+.mapa {
+    width: 100%;
+}
+
+/*-------------------------------------------------------------------------Portada de pag principal------------------------------------------------------------------------------------------------------------*/
+.portada {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 500px;
+}
+
+/*--------------------------------------------------------------------Botones de redireccionamiento de pag principal--------------------------------------------------------------------------------------------------------------*/
+.botones {
+    display: flex;
+    gap: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border-style: none;
+    width: 50%;
+    height: 320px;
+    background-size: cover;
+    text-decoration: none;
+    color: white;
+}
+
+.desc {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0px 30px;
+    font-size: 45px;
+}
+
+/*---------------------------------------------------------------------Descripcion de pag principal--------------------------------------------------------------------------------------------------*/
+.descripcion-index {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    width: 98.4%;
+    height: 600px;
+    background-image: url(../imagenes/Descripcion.jpg);
+    background-size: cover;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.descripcion-index p {
+    align-items: center;
+    justify-content: center;
+    display: block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 50%;
+    font-size: 40px;
+    padding: 15px;
+}
+
+/*--------------------------------------------------------------------------Seccion noticias-----------------------------------------------------------------------------------------------*/
+.cuerpo h1 {
+    text-align: center;
+    margin: 5%;
+    font-size: 50px;
+    color: black;
+    font-family: Arima;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.botones_Noticias {
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.boton_Noticia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border-style: none;
+    width: 50%;
+    height: 400px;
+    background-size: cover;
+    text-decoration: none;
+    color: white;
+}
+
+.text_Noticia {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    font-size: 40px;
+}
+
+
+/*-----------------------------------------------------------------------Formulario de reservar turno---------------------------------------------------------------------------------------------------------------*/
+.contenido-principal {
+    background-color: #86868B;
+}
+
+.contenido-principal section {
+    padding: 0 10%;
+}
+
+.contenido-principal h1 {
+    text-align: center;
+    margin: 5% 0;
+}
+
+.contenido-principal img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.formulario-contacto input {
+    padding: 5px 10px;
+    font-size: inherit;
+    margin-bottom: 15px;
+
+}
+
+.formulario-contacto textarea {
+    font-family: inherit;
+    font-size: inherit;
+    min-height: 250px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.formulario-contacto button {
+    padding: 10px;
+    margin: 15px 0;
+    font-size: inherit;
+}
+
+/*----------------------------------------------------------------------------Pag de bocetos-------------------------------------------------------------------------------------------------*/
+
+.contenedor-Bocetos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.bocetos {
+    padding: 10px 10px 10px 10px;
+    width: 25%;
+}
+
+.Bocetos_fig {
+    width: 100%;
+}
+
+.Bocetos_fig > img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/*------------------------------------------------------------------------------Pie de pag--------------------------------------------------------------------------------------*/
+.pie {
+    background-color: #676767;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.pie ul {
+    list-style: none;
+    justify-content: center;
+}
+
+.Informacion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.Telefono {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+    font-family: "Arima";
+    src: url(../fuentes/Arima-VariableFont_wght.ttf);
+}
+
+.TikToks {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+    font-family: "Arima";
+    src: url(../fuentes/Arima-VariableFont_wght.ttf);
+}
+
+.Youtube {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+    font-family: "Arima";
+    src: url(../fuentes/Arima-VariableFont_wght.ttf);
+}
+
+.Instagram {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: black;
+    font-family: "Arima";
+    src: url(../fuentes/Arima-VariableFont_wght.ttf);
+}
+
+.Instagram a {
+    text-decoration: none;
+    color: black;
+}
+
+.Gmail {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: "Arima";
+    src: url(../fuentes/Arima-VariableFont_wght.ttf);
+}
+
+.Gmail a {
+    text-decoration: none;
+    color: black;
+}
+
+/*--------------------------------------------------------------------------Pag de insumos---------------------------------------------------------------------------------------------------------------------------*/
+.cuerpo-insumos{
+    flex-grow: 1;
+    padding-block: 40px;
+    padding-inline: 10%;
+    background-color: #fff;
+}
+.cuerpo__figure {
+    width: 100%;
+}
+.cuerpo__figure > img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.cuerpo-cabecera {
+    padding-block: 10px;
+    margin-block: 10px;
+    border-bottom: 2px solid #333;
+}
+.cuerpo-cabecera__parrafo {
+    padding: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: #333;
+}
+
+.carrito{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.boton_carrito{
+   background-color: transparent;
+   border:none;
+   cursor:pointer;
+}
+
+.popup-carro form{
+    width:95%;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+.popup-carro form > button{
+    width: 10%;
+    margin-top: 20px;
+    /* height: 50px; */
+    background-color: transparent;
+    border:none;
+    font-size: 20px;
+}
+.popup-carro{
+    position: fixed;
+    margin:0;
+    inset: unset;
+    right:0;
+    bottom:0;
+    top:0;
+    width:50%;
+    min-width: 400px;
+    min-height:100dvh;
+    border:none;
+    border-radius: 30px;
+}
+
+.popup-carro h2{
+    width: 100%;
+    padding-left: 50px;
+    border-bottom: 2px solid #333;
+}
+
+.popup-carro section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.popup-carro section ul{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+}
+
+desc section div{
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+
+}
+
+.divisor{
+    display: flex;
+    justify-content: end;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    padding: 10px;
+    margin-block-end: 25px;
+}
+.productos__datos {
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.productos__fig {
+    width: 60%;
+}
+.productos__fig > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.productos__boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1rem;
+    padding-block: 10px;
+    padding-inline: 15px;
+    margin-block-start: 15px;
+    cursor: pointer;
+}
+.producto-agregado{
+    background-color: #73dbaa;
+}
+
+.eliminar-prod{
+    border: none;
+    background: transparent;
+}
+.comprarCarrito{
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+}
+.comprarCarrito button{
+    color: inherit;
+    font-family: inherit;
+    font-size: 1rem;
+    padding-block: 10px;
+    padding-inline: 15px;
+    margin-block-start: 15px;
+    cursor: pointer;
+}
+
+.notificador{ 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:none;
+    min-height:120px;
+    border-radius: 10px;
+}
+
+.notificador button{
+    position: fixed;
+    right:0;
+    margin: 5px;
+    background-color: transparent;
+    padding: 10px;
+    border:none;
+    font-size: 20px;
+}
+
+.notificador h1{
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*------------------------------------------------------------------------Pag de piercing----------------------------------------------------------------------------------*/
+.cuerpo-piercing{
+    flex-grow: 1;
+    padding-block: 40px;
+    background-color: #fff;
+}
+
+.contenedor-piercing{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.piercing{
+    padding: 10px 10px 10px 10px;
+    width: 25%;
+}
+
+.piercing__fig {
+    width: 100%;
+}
+.piercing__fig > img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+@media(width < 850px) {
+/*--------------------------------------------------------------------------Encabezado------------------------------------------------------------------------------------------------------*/
+.encabezado {
+    height: 40px;
+    /* padding-left: 10px;*/
+    padding-right: 10px; 
+}
+.imagen-Logo {
+    display: none;
+}
+
+.encabezado a img {
+    height: 30px;
+    width: 40px;
+}
+
+.encabezado nav a {
+    font-size: 13px;
+    width: 5px;
+}
+
+/*----------------------------------------------------------------------------------Portada-------------------------------------------------------------------------------------------------*/    
+.portada {
+    height: 150px;
+}
+
+/*-----------------------------------------------------------------------Botones de redireccionamiento------------------------------------------------------------------------------------------------------*/    
+.botones {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.boton {
+    width: 48.5%;
+    height: 150px;
+}
+
+.desc {
+    font-size: 25px;
+}
+
+/*--------------------------------------------------------------------------Seccion de descripcion------------------------------------------------------------------------------*/    
+.descripcion-index {
+    width: 95%;
+    height: 300px;
+    padding-right: 10px;
+}
+
+.descripcion-index p {
+    font-size: 19px;
+    padding-left: 10px;
+}
+
+/*--------------------------------------------------------------------------Seccion de noticias---------------------------------------------------------------------------*/    
+.cuerpo h1 {
+    font-size: 30px;
+    font-family: Dancing Script;
+}
+
+.botones_Noticias {
+    display: block;
+}
+
+.boton_Noticia {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.text_Noticia {
+    text-align: center;
+    font-size: 25px;
+}
+
+/*-----------------------------------------------------------------------------Pag de bocetos-----------------------------------------------------------------------------------------------*/    
+
+.bocetos {
+    width: 50%;
+}
+
+/*------------------------------------------------------------------------------Pie de pag------------------------------------------------------------------------------------------*/
+
+.pie {
+    font-size: 10px;
+}
+
+.Informacion {
+    gap: 5px;
+}
+
+.Telefono {
+    font-size: 15px;
+}
+
+.TikToks {
+    font-size: 15px;
+}
+
+.Youtube {
+    font-size: 15px;
+}
+
+.Instagram {
+    font-size: 15px;
+}
+
+.Gmail {
+    font-size: 15px;
+}
+
+.Trabaja {
+    font-size: 15px;
+}
+
+/*--------------------------------------------------------------------------Pag de insumos-----------------------------------------------------------------------------------------------*/
+
+.popup-carro form > button{
+    width: 15%;
+}
+
+.popup-carro{
+    min-width: 150px;
+}
+
+.popup-carro h2{
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.popup-carro section{
+    padding-left: 10px;
+}
+
+.popup-carro section ul{
+    font-size: 13px;
+}
+
+.productos {
+    width: 50%;
+}
+
+.productos__datos {
+    font-size: 15px;
+}
+
+.productos__fig {
+    width: 100%;
+}
+
+.productos__boton {
+    width: 100%;
+    height: 50px;
+}
+.comprarCarrito{
+    padding: 0%;
+    padding: 10px;
+    padding-top: 15px;
+}
+.comprarCarrito button{
+    font-size: 15px;
+    padding-block: 5px;
+    padding-inline: 0px;
+}
+
+.notificador h1{
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+}
+/*------------------------------------------------------------------------Pag de piercing----------------------------------------------------------------------------------*/
+
+.piercing{
+width: 100%;
+}
+}

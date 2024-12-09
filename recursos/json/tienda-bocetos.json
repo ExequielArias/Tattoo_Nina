@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "imagen": "../recursos/imagenes/Boceto-1.jpg"
+    },
+    {
+        "id": 2,
+        "imagen": "../recursos/imagenes/Boceto-2.jpg"
+    },
+    {
+        "id": 3,
+        "imagen": "../recursos/imagenes/Boceto-3.jpg"
+    },
+    {
+        "id": 4,
+        "imagen": "../recursos/imagenes/Boceto-4.jpg"
+    },
+    {
+        "id": 5,
+        "imagen": "../recursos/imagenes/Boceto-5.jpg"
+    },
+    {
+        "id": 6,
+        "imagen": "../recursos/imagenes/Boceto-6.jpg"
+    },
+    {
+        "id": 7,
+        "imagen":"../recursos/imagenes/Boceto-7.jpg"
+    },
+    {
+        "id": 8,
+        "imagen": "../recursos/imagenes/Boceto-8.jpg"
+    },
+    {
+        "id": 9,
+        "imagen": "../recursos/imagenes/Boceto-9.jpg"
+    },
+    {
+        "id": 10,
+        "imagen": "../recursos/imagenes/Boceto-10.jpg"
+    },
+    {
+        "id": 11,
+        "imagen": "../recursos/imagenes/Boceto-11.jpg"
+    },
+    {
+        "id": 12,
+        "imagen": "../recursos/imagenes/Boceto-1.jpg"
+    }
+]
